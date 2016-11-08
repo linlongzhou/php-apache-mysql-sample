@@ -1,7 +1,7 @@
 <?php
 
 require('DB.php');
-
+echo env("MYSQL_PORT_3306_TCP_ADDR", "");
 $db = new DB();
 
 if ($_POST) {

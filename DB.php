@@ -13,14 +13,7 @@ class DB
         $username =     env("MYSQL_USERNAME", "homestead");
         $password =     env("MYSQL_PASSWORD", "secret");
         
-        echo $serverName;
-        echo '<br/>';
-        echo $databaseName
-        echo '<br/>';
-        echo $username;
-        echo '<br/>';
-        echo $password;
-        echo '<br/>';
+        echo "" . $serverName;        
 
         try {
             $this->pdo = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);

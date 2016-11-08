@@ -8,10 +8,10 @@ class DB
 
     function __construct()
     {
-        $serverName = env("MYSQL_PORT_3306_TCP_ADDR", "db1.daocloudinternal.io");
-        $databaseName = env("MYSQL_INSTANCE_NAME", "temp_db");
-        $username = env("MYSQL_USERNAME", "root");
-        $password = env("MYSQL_PASSWORD", "GuMvZmvy");
+        $serverName = env("MYSQL_PORT_3306_TCP_ADDR", "");
+        $databaseName = env("MYSQL_INSTANCE_NAME", "");
+        $username = env("MYSQL_USERNAME", "");
+        $password = env("MYSQL_PASSWORD", "");
 
         try {
             $this->pdo = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
